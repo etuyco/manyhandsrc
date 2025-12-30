@@ -46,7 +46,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-card">
                             <div class="team-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/mariyam.jpeg" alt="Mariyam Tsygankova" class="team-image">
                             </div>
                             <div class="team-info">
                                 <h4>Mariyam Tsygankova</h4>
@@ -63,7 +63,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-card">
                             <div class="team-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/victoria.jpg" alt="Victoria Neufeld" class="team-image">
                             </div>
                             <div class="team-info">
                                 <h4>Victoria Neufeld</h4>
@@ -80,7 +80,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-card">
                             <div class="team-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/dyane.jpg" alt="Dyane Wiens" class="team-image">
                             </div>
                             <div class="team-info">
                                 <h4>Dyane Wiens</h4>
@@ -99,7 +99,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-card">
                             <div class="team-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/Lenore.jpg" alt="Lenore Penner" class="team-image">
                             </div>
                             <div class="team-info">
                                 <h4>Lenore Penner</h4>
@@ -131,41 +131,49 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="board-card">
                             <div class="board-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/Julie Plett.jpeg" alt="Julie Plett" class="board-image">
                             </div>
                             <h5>Julie Plett</h5>
                             <p class="board-role">Co-Chair</p>
-                            <p class="board-expertise">Healthcare</p>
+                            <p class="board-expertise">Julie Plett moved to Morden in 2016 with her husband and two children. When they first moved she stayed at home with her kids but once both  children were in school full time Julie made the decision to return to the workforce. 
+                            Julie is the Payroll & Benefits Coordinator at Elias Woodworking.
+                            Julie and her family are enjoying their  time in Morden and all that it has to offer.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="board-card">
                             <div class="board-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/darcy wolfe.jpg" alt="Darcy Wolfe" class="board-image">
                             </div>
                             <h5>Darcy Wolfe</h5>
                             <p class="board-role">Co-Chair</p>
-                            <p class="board-expertise">Finance</p>
+                            <p class="board-expertise">Darcy is living in Morden with his wife and two kids. He enjoys helping people, reading, and watching sports.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="board-card">
                             <div class="board-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/Sally Marsolais.jpg" alt="Sally Marsolais" class="board-image">
                             </div>
                             <h5>Sally Marsolais</h5>
                             <p class="board-role">Secretary</p>
-                            <p class="board-expertise">Legal</p>
+                            <p class="board-expertise">Sally and her family moved to Morden about 20 years ago. Sally is a strong advocate and seeks to contribute toward making Morden a safe and welcoming place for all. She works as a social worker and loves spending time with her family and especially her cat. </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="board-card">
                             <div class="board-photo">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="/img/officers/lawandafriesen.jpg" alt="Lawanda Friesen" class="board-image">
                             </div>
                             <h5>Lawanda Friesen</h5>
                             <p class="board-role">Member at Large</p>
-                            <p class="board-expertise">Education</p>
+                            <p class="board-expertise">Lawanda has lived in the Morden area her entire life.  
+
+                            She volunteered with the Many Hands Voucher Program and appreciated the impact Many Hands has in making a difference in our community.  
+
+                            “I decided to join the Many Hands Board to be part of the vision they have for supporting and building a stronger community through many different programs that are offered”. 
+
+                            Lawanda enjoys spending time with family and friends, traveling, camping and also volunteering with other organizations. </p>
                         </div>
                     </div>
                 </div>
@@ -259,6 +267,16 @@ export default {
     color: #42b883;
 }
 
+.team-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #42b883;
+    margin: 0 auto;
+    display: block;
+}
+
 .team-info h4 {
     color: #333;
     font-weight: bold;
@@ -324,6 +342,16 @@ export default {
 .board-photo i {
     font-size: 3rem;
     color: #42b883;
+}
+
+.board-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #42b883;
+    margin: 0 auto;
+    display: block;
 }
 
 .board-card h5 {

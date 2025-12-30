@@ -25,6 +25,8 @@ Route::middleware('auth')->prefix('api/admin')->group(function () {
     Route::apiResource('blogs', App\Http\Controllers\Api\Admin\BlogController::class);
     Route::apiResource('programs', App\Http\Controllers\Api\Admin\ProgramController::class);
     Route::apiResource('events', App\Http\Controllers\Api\Admin\EventController::class);
+    Route::apiResource('galleries', App\Http\Controllers\Api\Admin\GalleryController::class);
+    Route::get('/gallery-events', [App\Http\Controllers\Api\Admin\GalleryController::class, 'events']);
     Route::get('/contact-messages', [App\Http\Controllers\Api\Admin\ContactMessageController::class, 'index']);
     Route::put('/contact-messages/{id}/read', [App\Http\Controllers\Api\Admin\ContactMessageController::class, 'markAsRead']);
     Route::delete('/contact-messages/{id}', [App\Http\Controllers\Api\Admin\ContactMessageController::class, 'destroy']);

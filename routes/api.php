@@ -25,6 +25,8 @@ Route::get('/programs/{id}', [App\Http\Controllers\Api\ProgramController::class,
 Route::get('/events', [App\Http\Controllers\Api\EventController::class, 'index']);
 Route::get('/events/{id}', [App\Http\Controllers\Api\EventController::class, 'show']);
 
+Route::get('/galleries', [App\Http\Controllers\Api\GalleryController::class, 'index']);
+
 Route::get('/blogs', [App\Http\Controllers\Api\BlogController::class, 'index']);
 Route::get('/blogs/{slug}', [App\Http\Controllers\Api\BlogController::class, 'show']);
 
@@ -35,6 +37,9 @@ Route::post('/donations', [App\Http\Controllers\Api\DonationController::class, '
 Route::post('/donations/payment-intent', [App\Http\Controllers\Api\DonationController::class, 'createPaymentIntent']);
 Route::post('/volunteers', [App\Http\Controllers\Api\VolunteerController::class, 'store']);
 Route::post('/contact', [App\Http\Controllers\Api\ContactController::class, 'store']);
+
+// Registrations
+Route::post('/registrations', [App\Http\Controllers\RegistrationController::class, 'store']);
 
 // Admin API routes
 Route::middleware(['auth:web'])->group(function () {
@@ -52,4 +57,10 @@ Route::middleware(['auth:web'])->group(function () {
     Route::post('/events', [App\Http\Controllers\Api\EventController::class, 'store']);
     Route::put('/events/{id}', [App\Http\Controllers\Api\EventController::class, 'update']);
     Route::delete('/events/{id}', [App\Http\Controllers\Api\EventController::class, 'destroy']);
+    
+    // Registrations Management
+    Route::get('/registrations', [App\Http\Controllers\RegistrationController::class, 'index']);
+    Route::get('/registrations/{id}', [App\Http\Controllers\RegistrationController::class, 'show']);
+    Route::put('/registrations/{id}', [App\Http\Controllers\RegistrationController::class, 'update']);
+    Route::delete('/registrations/{id}', [App\Http\Controllers\RegistrationController::class, 'destroy']);
 });

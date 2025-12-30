@@ -20,7 +20,7 @@ export default {
     },
     computed: {
         isAdminRoute() {
-            return this.$route.path.startsWith('/admin') || this.$route.path.startsWith('/login');
+            return this.$route.path.startsWith('/admin');
         }
     }
 }

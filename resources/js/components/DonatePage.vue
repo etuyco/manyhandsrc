@@ -11,7 +11,7 @@
                                 <i class="bi bi-heart-fill hero-icon me-3"></i>
                                 Make a Difference
                             </h1>
-                            <p class="lead mb-4">Your generous donation helps us provide essential resources, food security, and community support to those who need it most.</p>
+                            <p class="lead mb-4">Thank you for your interest in donating to Many Hands! We are a charitable organization gratefully accepting financial support to better serve the needs of the Morden community. We have a number of ways that you can donate. All monetary donations over $20 will receive a tax receipt. Include your name and address to ensure you receive your receipt.</p>
                             <div class="stats-row">
                                 <div class="stat-item">
                                      <i class="bi bi-people-fill"></i>

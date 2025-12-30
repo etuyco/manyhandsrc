@@ -87,7 +87,7 @@
                                 <h2 class="h3 mb-4">About This Event</h2>
                                 <div class="content-body">
                                     <p v-if="event.description">{{ event.description }}</p>
-                                    <div v-if="event.content" v-html="formatContent(event.content)"></div>
+                                    <div v-if="event.content" v-registration="{ type: 'event', itemId: event.id }" v-html="formatContent(event.content)"></div>
                                     <div v-else class="default-content">
                                         <p>Join us for this exciting community event! We look forward to seeing you there.</p>
                                         <h4>What to Expect:</h4>

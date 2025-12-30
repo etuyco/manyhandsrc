@@ -78,7 +78,7 @@ export default {
                     image: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
                     badge: 'Welcome to our Community',
                     badgeIcon: 'bi bi-star-fill',
-                    title: '<span class="text-primary">MANY HANDS</span><br>Building Community',
+                    title: '<span class="text-primary">MANY HANDS</span><br>Nurturing Community and Empoweing Lives.',
                     description: 'Many Hands envisions a diverse and healthy community. A place where individuals and families all belong, have the opportunity to contribute, and access essential resources, social connection and personal growth.',
                     primaryButton: {
                         text: 'Our Programs',

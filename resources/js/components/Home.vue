@@ -60,55 +60,82 @@
         <EventsSection />
 
         <!-- Partners Section -->
-        <section class="partners-section py-5 bg-light">
-            <div class="container">
+        <section class="partners-section py-5">
+            <div class="partners-bg-overlay"></div>
+            <div class="container position-relative">
                 <div class="row text-center mb-5">
                     <div class="col-12">
-                        <h2 class="display-5 fw-bold mb-3">Our Partners</h2>
-                        <p class="lead text-muted">Working together to strengthen our community</p>
+                        <div class="section-badge mb-3">
+                            <i class="bi bi-handshake me-2"></i>
+                            <span>Trusted Partners</span>
+                        </div>
+                        <h2 class="display-4 fw-bold mb-4 text-white">Stronger Together</h2>
+                        <p class="lead text-white-75 mx-auto" style="max-width: 600px;">
+                            We collaborate with amazing organizations who share our vision of building a stronger, more connected community.
+                        </p>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center g-4">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="partner-card">
-                            <div class="partner-logo">
-                                <i class="bi bi-building"></i>
-                            </div>
-                            <h5 class="partner-name">Direct Farm Manitoba</h5>
-                            <p class="partner-description">Supporting local agriculture and fresh food access</p>
+                
+                <div class="partners-grid mb-5">
+                    <div class="partner-card-modern">
+                        <div class="partner-logo-modern">
+                            <img src="/img/partners/directfarm.png" alt="Direct Farm Manitoba" class="partner-image-modern">
                         </div>
+                        <div class="partner-content">
+                            <h5 class="partner-name-modern">Direct Farm Manitoba</h5>
+                            <p class="partner-description-modern">Supporting local agriculture and fresh food access</p>
+                            <div class="partner-tag">Agriculture</div>
+                        </div>
+                        <div class="partner-hover-effect"></div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="partner-card">
-                            <div class="partner-logo">
-                                <i class="bi bi-currency-dollar"></i>
-                            </div>
-                            <h5 class="partner-name">Manitoba Community Food Currency Program</h5>
-                            <p class="partner-description">Innovative food security solutions for families</p>
+                    
+                    <div class="partner-card-modern">
+                        <div class="partner-logo-modern">
+                            <img src="/img/partners/MCFCP.jpg" alt="Manitoba Community Food Currency Program" class="partner-image-modern">
                         </div>
+                        <div class="partner-content">
+                            <h5 class="partner-name-modern">MCFCP</h5>
+                            <p class="partner-description-modern">Innovative food security solutions for families</p>
+                            <div class="partner-tag">Food Security</div>
+                        </div>
+                        <div class="partner-hover-effect"></div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="partner-card">
-                            <div class="partner-logo">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                            <h5 class="partner-name">Southern Health Santé Sud</h5>
-                            <p class="partner-description">Healthcare and wellness services for our community</p>
+                    
+                    <div class="partner-card-modern">
+                        <div class="partner-logo-modern">
+                            <img src="/img/partners/southernhealth.jpg" alt="Southern Health Santé Sud" class="partner-image-modern">
                         </div>
+                        <div class="partner-content">
+                            <h5 class="partner-name-modern">Southern Health</h5>
+                            <p class="partner-description-modern">Healthcare and wellness services for our community</p>
+                            <div class="partner-tag">Healthcare</div>
+                        </div>
+                        <div class="partner-hover-effect"></div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="partner-card">
-                            <div class="partner-logo">
-                                <i class="bi bi-shop"></i>
-                            </div>
-                            <h5 class="partner-name">Morden Farmers Market</h5>
-                            <p class="partner-description">Fresh local produce and community connections</p>
+                    
+                    <div class="partner-card-modern">
+                        <div class="partner-logo-modern">
+                            <img src="/img/partners/farmersmarket.jpg" alt="Morden Farmers Market" class="partner-image-modern">
                         </div>
+                        <div class="partner-content">
+                            <h5 class="partner-name-modern">Morden Farmers Market</h5>
+                            <p class="partner-description-modern">Fresh local produce and community connections</p>
+                            <div class="partner-tag">Community</div>
+                        </div>
+                        <div class="partner-hover-effect"></div>
                     </div>
                 </div>
-                <div class="row text-center mt-5">
+                
+                <div class="row text-center">
                     <div class="col-12">
-                        <p class="text-muted">Together, we're making a difference in our community</p>
+                        <div class="partnership-cta">
+                            <h4 class="text-white mb-3">Want to Partner With Us?</h4>
+                            <p class="text-white-75 mb-4">Join our network of community partners making a real difference</p>
+                            <a href="/contact" class="btn btn-outline-light btn-lg px-5 py-3">
+                                <i class="bi bi-arrow-right-circle me-2"></i>
+                                Get In Touch
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,81 +182,229 @@ export default {
 }
 
 .partners-section {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 50%, #2ecc71 100%);
+    position: relative;
+    overflow: hidden;
 }
 
-.partner-card {
-    background: white;
+.partners-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.08) 0%, transparent 50%),
+        linear-gradient(45deg, rgba(0,0,0,0.1) 0%, transparent 100%);
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.partner-card-modern {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
     padding: 2rem;
-    border-radius: 12px;
     text-align: center;
-    border: 1px solid #e9ecef;
-    transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
 }
 
-.partner-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-color: #42b883;
+.partner-card-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #42b883, transparent);
+    transition: all 0.6s ease;
 }
 
-.partner-logo {
-    width: 80px;
-    height: 80px;
+.partner-card-modern:hover::before {
+    left: 100%;
+}
+
+.partner-card-modern:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(66, 184, 131, 0.2);
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.partner-logo-modern {
+    width: 100px;
+    height: 100px;
     margin: 0 auto 1.5rem;
-    background: linear-gradient(135deg, #42b883 0%, #347474 100%);
-    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    border: 3px solid rgba(66, 184, 131, 0.1);
+    overflow: hidden;
+    position: relative;
 }
 
-.partner-logo i {
-    font-size: 2.5rem;
-    color: white;
+.partner-logo-modern::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(66, 184, 131, 0.1), transparent);
+    transition: all 0.6s ease;
+    opacity: 0;
 }
 
-.partner-card:hover .partner-logo {
+.partner-card-modern:hover .partner-logo-modern {
     transform: scale(1.1);
+    border-color: rgba(66, 184, 131, 0.3);
+    box-shadow: 0 10px 30px rgba(66, 184, 131, 0.2);
 }
 
-.partner-name {
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+.partner-card-modern:hover .partner-logo-modern::after {
+    opacity: 1;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+.partner-image-modern {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.partner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.partner-name-modern {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
     line-height: 1.3;
 }
 
-.partner-description {
-    color: #666;
-    font-size: 0.9rem;
+.partner-description-modern {
+    color: #5a6c7d;
+    font-size: 0.95rem;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.partner-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #42b883, #2ecc71);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.partner-hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(66, 184, 131, 0.05), rgba(46, 204, 113, 0.05));
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.partner-card-modern:hover .partner-hover-effect {
+    opacity: 1;
+}
+
+.partnership-cta {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.partnership-cta .btn {
+    border-width: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.partnership-cta .btn:hover {
+    background: white;
+    color: #2c3e50;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 768px) {
-    .partner-logo {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 1rem;
+    .partners-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
-    .partner-logo i {
-        font-size: 2rem;
+    .partner-card-modern {
+        padding: 1.5rem;
     }
     
-    .partner-name {
-        font-size: 1rem;
+    .partner-logo-modern {
+        width: 80px;
+        height: 80px;
     }
     
-    .partner-description {
-        font-size: 0.85rem;
+    .partnership-cta {
+        padding: 2rem 1.5rem;
     }
 }
 </style>

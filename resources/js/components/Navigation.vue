@@ -26,6 +26,11 @@
                         </router-link>
                     </li>
                     <li class="nav-item">
+                        <router-link class="nav-link" to="/gallery">
+                            <span>Gallery</span>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
                         <router-link class="nav-link" to="/volunteer">
                             <span>Volunteer</span>
                         </router-link>
@@ -158,8 +163,10 @@ export default {
 }
 
 .nav-link:hover {
-    background: linear-gradient(135deg, #42b883 0%, #347474 100%);
-    color: white !important;
+    color: #42b883 !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
     transform: translateY(-2px);
 }
 
@@ -231,8 +238,10 @@ export default {
 }
 
 .dropdown-item:hover {
-    background: linear-gradient(135deg, #42b883 0%, #347474 100%);
-    color: white !important;
+    color: #42b883 !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .dropdown-item.router-link-active {

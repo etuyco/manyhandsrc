@@ -71,7 +71,7 @@
                         <div class="col-lg-8">
                             <div class="program-content">
                                 <h2 class="h3 mb-4">About This Program</h2>
-                                <div class="content-body" v-html="formatContent(program.content)"></div>
+                                <div class="content-body" v-registration="{ type: 'program', itemId: program.id }" v-html="formatContent(program.content)"></div>
                             </div>
                         </div>
                         <div class="col-lg-4">

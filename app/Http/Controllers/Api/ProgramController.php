@@ -43,6 +43,7 @@ class ProgramController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
+            'content' => 'nullable|string',
             'is_active' => 'boolean'
         ]);
 
@@ -61,6 +62,7 @@ class ProgramController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
+            'content' => 'nullable|string',
             'is_active' => 'boolean'
         ]);
 

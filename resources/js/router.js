@@ -4,6 +4,7 @@ import Home from './components/Home.vue';
 import ProgramsEventsPage from './components/ProgramsEventsPage.vue';
 import ProgramDetail from './components/ProgramDetail.vue';
 import EventDetail from './components/EventDetail.vue';
+import GalleryPage from './components/GalleryPage.vue';
 import DonatePage from './components/DonatePage.vue';
 import VolunteerPage from './components/VolunteerPage.vue';
 import ContactPage from './components/ContactPage.vue';
@@ -36,6 +37,11 @@ const routes = [
         path: '/events/:id',
         name: 'EventDetail',
         component: EventDetail
+    },
+    {
+        path: '/gallery',
+        name: 'Gallery',
+        component: GalleryPage
     },
     {
         path: '/donate',
